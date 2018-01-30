@@ -1,5 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .container {
 	width: 100%;
 }
@@ -411,22 +418,25 @@ a.blogmore {
 .lastpage {
 	width: 100%;
 	}
+.subscribe {
+    font-size: 0;
+}
+form.searchbar {
+    font-size: 0;
+}
 form {
     width: 34%;
     display: inline-block;
 }
-
 input[type=submit],input[type=text] {
     padding: 12px;
     display: inline-block;
     box-sizing: border-box;
     border: none;
 }
-
 input[type=text] {
 	background-color: white;
 }
-
 input[type=submit]:hover {
     opacity: 0.8;
 }
