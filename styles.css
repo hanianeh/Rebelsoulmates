@@ -17,7 +17,7 @@ div.hidden{
 
 
 #header {
-	display: inline-block;
+	display: flex;
 	width: 98.5%;
 	margin-top: -1vw;
 	height: 37px;
@@ -28,6 +28,7 @@ div.hidden{
 	position: fixed;
 	top: 11px;
 	left: 8px;
+	justify-content: space-between;
 }
 .hashtag {
 	font-family: 'Arvo', serif;
@@ -37,7 +38,6 @@ div.hidden{
 	padding: 4px;
 	color: #00000078;
 	max-width: fit-content;
-	float: left;
 }
 .nav ul {
 	padding: 0;
@@ -66,7 +66,6 @@ div.hidden{
 	margin-right: 6px;
 	margin-top: 9px;
 	max-width: fit-content;
-	float: right;
 }
 a i{
 	color: #00000078;
@@ -77,10 +76,7 @@ a:hover i{
 	border-radius: 3px;
 }
 div.nav{
-	display: inline-block;
-	text-align: center;
 	max-width: fit-content;
-	margin: 0 auto;
 	margin-top: 5px;
 }
 .change{
@@ -498,3 +494,4 @@ div.copyright {
    font-family: myFirstFont;
    src: url(sansation_light.woff);
 }
+/*command+/*/
