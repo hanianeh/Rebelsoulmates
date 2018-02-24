@@ -2,7 +2,6 @@
 /* CSS Document */
 html {
 	box-sizing: border-box;
-	font-size: 3vw;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -14,12 +13,15 @@ html {
 div.hidden{
 	display: none;
 }
+body {
+    margin: 0px;
+}
 /******************************************************header***************************************************************/
 
 
 #header {
-	/* display: flex; */
-	width: 97.5%;
+	display: flex;
+	width: 100%;
 	height: 2.1rem;
 	background: #f4f4f4;
 	opacity: 0.8;
@@ -27,7 +29,6 @@ div.hidden{
 	z-index: 100;
 	position: fixed;
 	top: 0;
-	left: 8px;
 	justify-content: space-between;
 	font-size: 0.9rem;
 	color: #00000078;
@@ -84,6 +85,16 @@ div.nav{
 	position: fixed;
 }
 
+
+
+
+
+@media (max-width: 800px) {
+html {
+        font-size: 3vw; 
+    }
+}
+
 /******************************************************first page***************************************************************/
 
 div.firstbackresponsive{
@@ -106,10 +117,6 @@ div.firstback{
 /******************************************************second page***************************************************************/
 
 div.backgroundall{
-	/*background-image:url(images/backgroundall.gif);
-	background-repeat: no-repeat;
-	position: relative;
-	background-size: 100%; */
 	background: linear-gradient(to bottom, #f5f1f13d , #7d5351a8 , #eae0e05c);
 }
 
@@ -151,72 +158,6 @@ div#vid-wrapper {
     transition: all ease 0.8s;
     height: 100%;
 }
-/*
-.thumb {
-	position: relative;
-    transition: all ease 0.8s;
-	width: 100%;
-	height: 22vw;
-}
-
-
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-img.bioimg {
-    height: auto;
-    max-width: 100%;
-    border-radius: 50%;
-    padding: 0.5vw;
-    background-color:  white;
-}
-
-.vid-single:hover span.hover  {
-    opacity: 1;
-	border-radius: 50%;
-	padding: 0.5vw;
-	box-shadow: rgba(220,220,220,0.36) 0 0px 0px 170px inset;
-}
-.vid-single span.hover {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: all ease 0.4s;
-    font-family: Arvo, serif;
-    font-size: 1.7vw;
-    padding: 0.5vw;
-    width: 100%;
-    height: 22vw;
-}
-.mohsensocialmedia .ussocialmedia .hanisocialmedia{
-	font-weight: 300;
-    position: relative;
-    margin-bottom: 10px;
-	margin: 0;
-}
-a.biolink{
-	text-decoration: none;
-	color: white;
-}
-.hanisocialmedia a i {
-	color: white;
-}
-.ussocialmedia a i {
-	color: white;
-}
-
-.mohsensocialmedia a i {
-	color: white;
-}
-*/
-
-
-
 
 
 .ih-item.circle .img:before {
@@ -246,7 +187,6 @@ a.biolink{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    /* box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3); */
     transition: all 0.35s ease-in-out;
 }
 .ih-item.circle.effect10 .info {
@@ -273,7 +213,6 @@ a.biolink{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    /* box-shadow: inset 0 0 0 0.5vw rgb(255, 255, 255), 0 1px 2px rgba(0, 0, 0, 0.1); */
     transition: all 0.35s ease-in-out;
 }
 .ih-item.circle.effect10.bottom_to_top .info h3 {
@@ -412,11 +351,7 @@ a.bloglink {
     display: block;
 }
 
-@media (min-width: 500px) {
-    a.bloglink {
-        width: 47%; 
-    }
-}
+
 
 /******************************************************footer***************************************************************/
 
